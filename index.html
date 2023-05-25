@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>restaurant</title>
+    <link
+      rel="shortcut icon"
+      href="./images/title-logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <link rel="stylesheet" href="./public/css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="./images/logo-img.png" alt="logo" />
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a class="active" href="#home">Головна</a>
+          </li>
+          <li>
+            <a href="#about">Про нас</a>
+          </li>
+          <li>
+            <a href="#menu">Меню</a>
+          </li>
+          <li>
+            <a href="#popular">Популярне</a>
+          </li>
+          <li>
+            <a href="#gallery">Галерея</a>
+          </li>
+          <li>
+            <a href="#order">Замовлення</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+
+    <main>
+      <section id="home" class="home">
+        <div class="home-desc">
+          <h1>Ми віримо, що хороша їжа гарантує чудову посмішку!</h1>
+          <p>
+            У нас ви знайдете страви на різний смак!
+          </p>
+          <input type="button" value="Замовити" />
+        </div>
+
+        <div class="home-image">
+          <img src="./images/home-img.png" alt="Net Error" />
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-image">
+          <img src="./images/about-frame-img.png" alt="" />
+        </div>
+
+        <div class="about-desc">
+          <h2>Про нас</h2>
+          <p>
+          Величезна відкрита кухня у вільному доступі для наших відвідувачів.
+          Кожен може прийти та спостерігати як створюються кулінарні шедеври нашого ресторану.
+          Дітлахи можуть бавитися та вивчати підводний світ «догори ногами», насолоджуючись переглядом улюблених мультфільмів у справжньому домашньому кінотеатрі в нашій дитячій кімнаті.
+          </p>
+          <p>
+          Ми готуємо каву на золотій кавовій машині - “Slayer Espresso” Gold (позолочена 24-каратним золотом). У світі їх існує всього три, в Нью-Йорку (на Манхеттені), в Дубаї (у шейха в приватній колекції), і в нас!
+          </p>
+
+          <input type="button" value="Більше" />
+        </div>
+      </section>
+
+      <section id="menu" class="menu">
+        <h2>Наше смачне <span>меню</span></h2>
+        <div class="catagory">
+          <input type="button" value="сніданок" />
+          <input type="button" class="active" value="Ланч" />
+          <input type="button" value="Вечеря" />
+          <input type="button" value="Десерт" />
+        </div>
+
+        <div class="catagory-img">
+          <img id="c-img" src="./images/menu-lunch.jpg" alt="Net Error" />
+        </div>
+
+        <!-- ---info content 01--- -->
+        <div class="menu-content">
+          <div class="info">
+            <h3><span>01.</span>Шпинатний омлет з лососем та страчателлою</h3>
+            <p>
+            Яйце, лосось, шпинат, страчателла, паніні, рукола, соус Голандез, мікс насіння, кунжут чорний, паприка шматочками, лайм, мікрогрін, сушена цибуля
+            </p>
+          </div>
+
+          <!-- ---info content 02--- -->
+          <div class="info">
+            <h3><span>02.</span>Сирники з карамеллю та арахісом</h3>
+            <p>
+            Сирники, карамель, гранола, карамелізований арахіс, кокосові чіпси
+            </p>
+          </div>
+
+          <!-- ---info content 03--- -->
+          <div class="info">
+            <h3><span>03.</span>Яєчня з прошуто та моцарелою</h3>
+            <p>
+            Прошуто, моцарела, паніні, авокадо, чері, яєчня, рукола, мікс насіння, кунжут білий, мікрогрін, паприка шматочками, соус песто, соус Голандез
+            </p>
+          </div>
+
+          <!-- ---info content 04--- -->
+          <div class="info">
+            <h3><span>04.</span>Омлет з копченим лососем та авокадо</h3>
+            <p>
+            Лосось копчений, паніні, омлет, авокадо, помідор, огірок, гуакамоле, мікрогрін, лайм, мікс насіння, мікс кунжуту, паприка шматочками
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====markup popular section==== -->
+      <section id="popular" class="popular">
+        <h2>Популярні <span>страви</span> тижня</h2>
+
+        <div class="popular-content">
+          <!-- ---card 01--- -->
+          <div class="p-card">
+            <img src="./images/product-1.jpg" alt="Net Error" />
+            <h4>Нагетси із соусом</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">130.00</p>
+            <input type="button" value="Купити" />
+          </div>
+
+          <!-- ---card 02--- -->
+          <div class="p-card">
+            <img src="./images/product-2.jpg" alt="Net Error" />
+            <h4>Охолоджуючий лимонад</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">80.00</p>
+            <input type="button" value="Купити" />
+          </div>
+
+          <!-- ---card 03--- -->
+          <div class="p-card">
+            <img src="./images/product-3.jpg" alt="Net Error" />
+            <h4>Ролл з мясом курки</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">120.00</p>
+            <input type="button" value="Купити" />
+          </div>
+
+          <!-- ---card 04--- -->
+          <div class="p-card">
+            <img src="./images/product-4.jpg" alt="Net Error" />
+            <h4>Вега паста</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">150.00</p>
+            <input type="button" value="Купити" />
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <h2>Наша галерея <span>страв</span></h2>
+
+        <div class="gallery-content">
+          <div class="g-card">
+            <img src="./images/img1.jpg" alt="Net Error" />
+            <h3>Десерт "Яблучко" </h3>
+          </div>
+
+          <!-- ---gallery card 02--- -->
+          <div class="g-card">
+            <img src="./images/img2.jpg" alt="Net Error" />
+            <h3>Свинний шашлик</h3>
+          </div>
+
+          <div class="g-card">
+            <img src="./images/img3.jpg" alt="Net Error" />
+            <h3>Англійський сніданок</h3>
+          </div>
+
+          <div class="g-card">
+            <img src="./images/img4.jpg" alt="Net Error" />
+            <h3>Курочка з фрі</h3>
+          </div>
+
+          <div class="g-card">
+            <img src="./images/img5.jpg" alt="Net Error" />
+            <h3>Фреш</h3>
+          </div>
+
+          <div class="g-card">
+            <img src="./images/img6.jpg" alt="Net Error" />
+            <h3>Медовик</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="order">
+        <h2>Зробити<span>замовлення</span></h2>
+
+        <div class="order-content">
+          <form action="#" class="order-form" autocomplete="off">
+            <input type="text" placeholder="Ім'я" required />
+            <input type="email" placeholder="email" required />
+            <input type="password" placeholder="password" required />
+            <input type="number" placeholder="номер телефону" required />
+            <textarea cols="30" rows="8" placeholder="коментарі"></textarea>
+
+            <button type="submit">Замовити</button>
+          </form>
+          <img src="./images/form-img.jpg" alt="Net Error" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="contact-info">
+        <h4>Контакти</h4>
+        <p>
+          <i class="fas fa-location-dot"></i
+          ><span>Львів, вул.Городоцька, 225</span>
+        </p>
+        <p><i class="fas fa-envelope"></i> <span>foodweb33@gmail.com</span></p>
+        <p><i class="fas fa-phone"></i> <span>+380984354354</span></p>
+        <p><i class="fas fa-phone"></i> <span>+380614546706</span></p>
+      </div>
+
+      <div class="location">
+        <h4>Наші ресторани</h4>
+        <ul>
+          <li><a href="#">Київ,вул.Металістів,8</a></li>
+          <li><a href="#">Тернопіль,вул.Сагайдачного,150</a></li>
+          <li><a href="#">Одеса,вул.Садова,30</a></li>
+          <li><a href="#">Хмельницьк,вул.Драгоманова,45</a></li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <h4>Посилання</h4>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#popular">Популярні</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#order">Замовлення</a></li>
+        </ul>
+      </div>
+
+      <div class="follow-us">
+        <h4>Слідкуй за нами</h4>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="blank">facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="blank">instagram</a>
+          </li>
+          <li><a href="https://www.twitter.com" target="blank">twitter</a></li>
+          <li>
+            <a href="https://www.linkedin.com" target="blank">linkedin</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright 2023 || &copy all right reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>
